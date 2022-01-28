@@ -32,9 +32,12 @@ Set up a third colormap for later use:
 Now if you try graphing with the first colormap (*cm*), you will notice that it sets up 3 lime green big blocks and 1 red big box. However if you try graphing with cm2
 you will see that there are 2 bars as seen below in which the 2nd has a greater color span. The first is limited because of the floor divission, but you can see a slight
 shift in color if you look closely. Here is what you would call to show the second colormapped output along with the color slide:
-`fig, ax =plt.subplots()
-ax.imshow(data,cmap=cm2,aspect = 'auto',extent=[0,52,0,52],vmin=1,vmax=51)`
-![2 Layered color fade](https://github.com/AxisMeetsWorld/Color-Schemes-and-Polar-Coordinates/blob/main/Two%20arrays%20graphed.png)
+`fig, ax =plt.subplots()`
+
+`ax.imshow(data,cmap=cm2,aspect = 'auto',extent=[0,52,0,52],vmin=1,vmax=51)`
+
+**Scaled display of 2 different ranges (notice the first only goes 1/5th as far as the second)**
+<img src="https://github.com/AxisMeetsWorld/Color-Schemes-and-Polar-Coordinates/blob/main/Two%20arrays%20graphed.png" width=60% height=60%>
 
 
 
