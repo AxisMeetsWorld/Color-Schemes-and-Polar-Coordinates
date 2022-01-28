@@ -34,6 +34,7 @@ you will see that there are 2 bars as seen below in which the 2nd has a greater 
 shift in color if you look closely. Here is what you would call to show the second colormapped output along with the color slide:
 `fig, ax =plt.subplots()
 ax.imshow(data,cmap=cm2,aspect = 'auto',extent=[0,52,0,52],vmin=1,vmax=51)`
+![2 Layered color fade](https://github.com/AxisMeetsWorld/Color-Schemes-and-Polar-Coordinates/blob/main/Two%20arrays%20graphed.png)
 
 
 
