@@ -39,6 +39,48 @@ shift in color if you look closely. Here is what you would call to show the seco
 **Scaled display of 2 different ranges (notice the first only goes 1/5th as far as the second)**
 <img src="https://github.com/AxisMeetsWorld/Color-Schemes-and-Polar-Coordinates/blob/main/Two%20arrays%20graphed.png" width=60% height=60%>
 
+Here are a few other basic chart graphing basics: 
+- Line Graph code
+
+`inp=[1,2,3,4,5,6,7]`
+
+`outp=[]`
+
+`for i in inp:`
+
+` outp.append(i**2)`
+
+`plt.plot(inp,outp,color='aqua',marker='o',markerfacecolor='blue')`
+
+![Output](https://github.com/AxisMeetsWorld/Color-Schemes-and-Polar-Coordinates/blob/main/line-dot.png)
+
+
+- Pie Chart example
+
+`budget=[450,300,950,1025]`
+
+`costs=['groceries','travel','leasure','rent']`
+
+`cols=['red','green','yellow','purple']`
+
+`plt.pie(budget,labels=costs,colors=cols,shadow=True,startangle=180,radius=2.5)`
+
+![Pie Output](https://github.com/AxisMeetsWorld/Color-Schemes-and-Polar-Coordinates/blob/main/Basic%20pie.png)
+
+
+- 3 color slide graphs in one from the color schemes we created earlier. 
+
+The real trick here is to simply set up 3 color graphs in 3 columns with the MatPlotLib.subplots function and then use different color maps with the 
+**pcolormesh()** function. This only shows one of the called pcolormeshes.
+
+`fig, (ax1, ax2, ax3)= plt.subplots(nrows= 1, ncols=3, figsize=(10,4))`
+
+`ax1.pcolormesh(data,cmap=cm3)`
+
+`ax1.set_title('Beach to Night Color')`
+
+![Three different color slide graphs](https://github.com/AxisMeetsWorld/Color-Schemes-and-Polar-Coordinates/blob/main/three_slides.png)
+
 
 
 
