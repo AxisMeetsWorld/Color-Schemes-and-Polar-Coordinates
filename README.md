@@ -143,7 +143,7 @@ To implement this:
 
 `ax2.plot(rthet,rline,color='b')`
 
-**Here is your plot which shows a sort of measure of how far you have spiraled away from the center ⭐**
+**⭐ Here is your plot which shows a sort of measure of how far you have spiraled away from the center ⭐**
 
 <img src="https://github.com/AxisMeetsWorld/Color-Schemes-and-Polar-Coordinates/blob/main/SpiralFade.png" width=60% height=60%>)
 
